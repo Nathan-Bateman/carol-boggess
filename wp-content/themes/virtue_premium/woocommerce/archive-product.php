@@ -140,3 +140,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
+	<?php
+		
+		echo '<hr class="hr-style">';
+		echo'<div id="custom-wrapper-shop"><h3 class="shop-page-blog-heading">Latest from the Blog</h3>';
+		echo do_shortcode( '[blog_posts  items="2" orderby="date"]' );
+		echo '</div>';
+
+
+	?>
